@@ -1,6 +1,18 @@
 = rpn
 
-
 Calculator capable of reverse polish notation
+
+Now, the goals that the man himself showcased in 2010 were
+
+- comprehensible
+- statically typed
+- light on the page
+- fast to work in
+- scales well
+- doesn't require tools, but supports them well
+- good at networking and multiprocessing
+
+If i look at this implementation of a commandline RPN interpreter in 65 lines,
+pretty impressive.
 
 Licensed under the same license as Go/ Golang itself.
