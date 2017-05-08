@@ -1,0 +1,6 @@
+= rpn
+
+
+Calculator capable of reverse polish notation
+
+Licensed under the same license as Go/ Golang itself.
