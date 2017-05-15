@@ -42,17 +42,20 @@ func main() {
 		case "+":
 			stack.Push(stack.Pop() + stack.Pop())
 		case "-":
-			n₁ := stack.Pop()
-			n₂ := stack.Pop()
-			stack.Push(n₂ - n₁)
+			n1 := stack.Pop()
+			n2 := stack.Pop()
+			stack.Push(n2 - n1)
 		case "*":
 			stack.Push(stack.Pop() * stack.Pop())
 		case "/":
-			n₁ := stack.Pop()
-			n₂ := stack.Pop()
-			stack.Push(n₂ / n₁)
+			n1 := stack.Pop()
+			n2 := stack.Pop()
+			stack.Push(n2 / n1)
 		default:
-			n, _ := strconv.Atoi(arg)
+			n, err := strconv.Atoi(arg)
+			if err != nil {
+				panic(err)
+			}
 			stack.Push(n)
 		}
 	}
